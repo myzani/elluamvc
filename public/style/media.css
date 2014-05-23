@@ -1,0 +1,49 @@
+@media screen and (min-width: 320px) and (max-width: 699px){
+    body                 { font-size: 1.2em; margin: 25px 0 0 0; }
+    #mycarousel          { display: none; }
+    .clr                 { clear:both; }
+    .elluaDesc span      { display: none; }
+    .elluaDesc:after     { content: 'ELLUA'; }
+    .elluaDescFtr        { display: none; }
+    .box                 { width: 250px; left: 6%; }
+    #footer {
+        margin-top: 38%;
+    }
+    #search { 
+        left: -5px;
+        margin-top: 0;
+        width: 27px;
+        height: 24px;
+    }
+    .inputSearch{
+        left: -8px;
+        margin-top: -3px;
+        padding: 3px 3px 3px 38px;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 980px) {
+    .clr{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .elluaDesc span{
+        display: none;
+    }
+    .elluaDesc:after{
+        content: 'ELLUA';
+    }
+}
+
+@media screen and (min-width: 981px) and (max-width: 1280px){
+    .clr{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .elluaDesc span{
+        display: none;
+    }
+    .elluaDesc:after{
+        content: 'ELLUA';
+    }
+}

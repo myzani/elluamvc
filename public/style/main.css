@@ -1,0 +1,613 @@
+@import url('common.css');
+@import url('dropdown.css');
+@import url(http://fonts.googleapis.com/css?family=Amarante);
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url(ProximaNova-Light.otf);
+}
+
+@font-face{
+    font-family: 'fontawesome';
+    src: url(font-awesome/fonts/FontAwesome.otf);
+    font-weight: bold;
+}
+
+html, body{
+    height: 100%;
+    padding: 0 !important;
+	margin: 15px 0 0 0 !important;
+	background: #f5f0ec;
+    position: relative;
+}
+body{
+	font-family: 'MyWebFont', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #666;
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+#cont{
+    min-height:100%;
+    position:relative;
+}
+#cont > h1:nth-child(2){
+    color: rgba(0,0,0, 0.7);
+    -webkit-border-radius: 0 10px;
+    -moz-border-radius: 0 10px;
+    border-radius: 0 10px;
+    width: 100%;
+    font-weight: bold;
+    border: medium none;
+    padding: 10px;
+    background: url("http://elluamvc.dev/images/divider.png") repeat-x scroll left bottom transparent;
+}
+
+.panel-heading .row > h1 {
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+}
+
+.panel-heading { 
+    border-bottom: none; 
+    background: url("http://elluamvc.dev/images/divider.png") repeat-x scroll left bottom transparent; 
+}
+
+#footer{
+    position: relative;
+    bottom: 0 !important;
+    width: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 0px !important;
+}
+
+.table > thead > tr > th{ white-space: nowrap; }
+
+::-moz-selection{
+	background: #6c9c76;
+	color: white;
+}
+
+::selection{
+	background: #6c9c76;
+	color: white;
+}
+
+h1{ color: #056495; }
+
+.elluaDesc, .elluaDescFtr{ color: white !important; }
+
+.navbar{
+	background-color: #3b7140;
+	border-color: #3b7140;
+	font-family: Calibri,Arial,sans-serif;
+}
+
+.tooltip-inner{ background: #182e1a; }
+.tooltip-arrow{ border-top-color:  #182e1a !important; }
+
+.active > a{
+	color: white !important;
+	background: #182e1a !important;
+}
+
+/* Pop over bootstrap */
+.popover-content{
+    color: #d43f3a;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+#menu{ margin-right: 30px; }
+
+#menu > li > a{ color: white !important; }
+
+#menu > li > a:hover, .navbar-toggle:hover, .dropAbout:hover{
+	background: #182e1a !important
+}
+
+.logo{
+	width: 35px;
+	height: 35px;
+	border-radius: 4px;
+	margin: 7px 5px 0 0;
+}
+
+ul.socLogo1 li a {
+    float: right;
+    display: block;
+    background: url("http://elluamvc.dev/images/social.png") no-repeat;
+    width: 50px;
+	height: 50px;
+}
+
+ul.socLogo1 li:first-child > a {
+    background-position: center 0;
+}
+
+ul.socLogo1 li:last-child > a {
+    background-position: 0 -199px;
+}
+
+ul.socLogo1 li{ list-style: none; }
+
+.search{
+    position: relative;
+    top: 0;
+    right: -20px;
+}
+
+#search{
+    position: absolute;
+    top: 0;
+    left: -18px;
+    margin-top: 12px;
+    width: 30px;
+	height: 27px;
+    cursor: pointer;
+}
+
+#clear-search{
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    width: 20px;
+    height: 12px;
+    color: #3b7140;
+    display: block;
+    cursor: pointer;
+}
+
+.inputSearch{
+    position: absolute;
+    top: 0;
+    right: -13px;
+    width: 200px;
+    margin-top: 10px;
+    display: none;
+    height: 30px;
+    border-radius: 4px;
+    padding: 3px 50px 3px 3px;
+    z-index: 10px;
+}
+
+.activeKey > a{
+    background: #428BCA !important;
+    border-color: #428BCA !important;
+    color: #FFF;
+    cursor: default;
+}
+
+.imgBanner{
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption > p{ color: #FFF; font-size: 13px; }
+
+#mycarousel{ margin-bottom: 20px; }
+
+#ownerpic{ width: 200px; height: 200px; margin-top: 10px;}
+
+#ownpic{ width: 19%; }
+#ownpic img { 
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; 
+}
+
+#ownerpic, #hdrOwn{
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	padding: 5px;
+}
+
+#hdrOwn{
+	margin: 20px 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+
+#hdrOwn:nth-child(2n){ color: #355681; }
+
+.col-md-9 > p{
+	margin-top: 7px;
+	font-style: italic;
+}
+
+.hdrComp{
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	font-weight: 200;
+	font-size: 1.64286em;
+	text-align: center;
+	background: #6c9c76;
+	color: #FFF;
+	padding: 4px;
+}
+
+.hdrAbout{ 
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0; 
+}
+
+.caption {
+    margin-top: 40px;
+}
+
+/* Overlay Section */
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    -webkit-opacity: 0.7 !important;
+    -moz-opacity: 0.7 !important;
+    opacity: 0.7 !important;
+    z-index: 1004;
+}
+
+#close{ 
+    margin: 8px 56px 0 0;
+    cursor: pointer;
+}
+
+.fHdr{
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.frame{
+    display: none;
+    position: fixed;
+    left: 25%;
+    width: 50%;
+    height: 40%;
+    background: #FFF;
+    z-index: 1005;
+    margin-top: 2%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.frame span{
+    float: right;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.frame p{
+    clear: both;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 90%;
+}
+
+.frame a{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    
+}
+
+/* Payments */
+input[id*="signUp"]:hover{ cursor: pointer; }
+
+/* Contacts */
+#pFtr{
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 6px !important;
+}
+
+.pFtrRow{ margin: 0 !important; }
+
+.box{
+    float: left;
+    position: relative;
+    top: 0;
+    left: 20%;
+    bottom: 10%;
+    width: 350px;
+    height: 80px;
+    background-color: #f18d01;
+    color: #ffffff;
+    margin: 10px 10px 8px 0;
+    padding: 0;
+    font-family: Helvetica, Arial, san-serif;
+    font-weight: bold;
+   
+    
+/*
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center;
+*/
+}
+.box h5{
+ text-align: center;
+    line-height: 55px;
+}
+
+.boxbot{ margin-top: 2px; }
+
+#loader{ display: none; }
+
+#pId{
+    background-color: #5bc0de;
+    color: #FFFFF;
+    width: 100%;
+    height: 45px !important;
+    margin-bottom: 15px;
+    display: none;
+}
+#pId h4{ 
+    color: #FFFFFF; 
+    margin: 0;
+    padding: 10px;
+}
+
+/* Teacher */
+.teachImgWrap{
+    position: relative;
+    top: 30px;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.teachImgWrap:hover span:first-child{ opacity: 1; }
+
+.teachImg{
+    height: 200px;
+    width: 200px;
+}
+
+.teachImgWrap span:first-child{
+    opacity: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    font-family: Calibri,Arial,sans-serif;
+    font-size: 1em;
+    transition: opacity 1s;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    cursor: pointer;
+}
+
+/* Teachers Overlay */
+.frameNext, .frameNextShadow{
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 1250px;
+    width: 45%;
+    height: 445px;
+    background-color: #FFF;
+    padding: 0 15px 15px;
+    opacity: 0.6;
+    z-index: 1005;
+}
+
+.frameNextShadow{ border: 1px solid red;  z-index: 1005;}
+
+.nextTeach, .nextTeachShadow{
+    height: 300px;
+    width: 350px;
+    margin: 20px 30px 15px 0;
+    float: left;
+}
+
+#nxtIco, #prevIco{
+    display: none;
+    position: absolute;
+    top: 44%;
+    cursor: pointer;
+    z-index: 1007;
+}
+
+#nxtIco{ right: 60px; }
+#prevIco{ left: 60px; }
+#quote{ display: none; }
+
+.framePrev, .framePrevShadow{
+    display: none;
+    position: fixed;
+    top: 120px;
+    right: 1250px;
+    width: 45%;
+    height: 445px;
+    background-color: #FFF;
+    padding: 0 15px 15px;
+    opacity: 0.6;
+    z-index: 1005;
+}
+
+.prevTeach, .prevTeachShadow{
+    height: 300px;
+    width: 350px;
+    margin: 20px 30px 15px 0;
+    float: left;
+}
+
+.frameTeach, .frameTeachShadow{
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 27%;
+    width: 45%;
+    height: 75%;
+    background-color: #FFFFFF;
+    padding: 0 15px 15px;
+    z-index: 1005;
+}
+
+.teachImgLarge, .teachImgLargeShadow{
+    height: 350px;
+    width: 350px;
+    margin: 20px 30px 15px 0;
+}
+
+/* Overlay frame for search */
+.frameSrch{
+    display: none;
+    position: fixed;
+    font-style: normal;
+    font: 0.9em "Trebuchet ms", "arial", "san-serif";
+    left: 20%;
+    width: 60%;
+    background: #FFF;
+    margin-top: 2%;
+    padding: 20px;
+    height: 500px;
+    border-radius: 3px;
+    z-index: 1008;
+}
+
+.frmSrchBg { background: #3b7140; }
+
+.frameSrch > a{ text-decoration: none; }
+
+.frameSrch > h4 { 
+    font-weight: 600;
+    padding-bottom: 15px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    background: url("http://elluamvc.dev/images/divider.png") repeat-x scroll left bottom transparent;
+}
+
+.cBadge {
+    background: #ccc;
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.frameSrch > p{ word-wrap: break-word; font-size: 0.9em;}
+
+.expertList{ color: #3b7140; }
+
+.expertList ul li{ list-style: inside square; }
+
+.expertList h4{
+    font-family: 'Amarante', cursive;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.quote{
+    clear:both;
+    width: 100%;
+    height: 95px;
+    background: #6c9c76;
+    color: #FFF;
+    font-family: cursive;
+    font-size: 13px;
+    padding: 4px;
+    overflow-y: scroll;
+}
+
+.quote::-webkit-scrollbar{ width: 8px; }
+
+.quote::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.quote::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: rgba(192,192,192,0.8); 
+}
+
+.quote::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(192,192,192,0.4); 
+}
+
+@media screen and (min-width: 320px) and (max-width: 699px){
+    body                 { font-size: 1.2em; margin: 25px 0 0 0; }
+    #mycarousel          { display: none; }
+    .clr                 { clear:both; }
+    .elluaDesc span      { display: none; }
+    .elluaDesc:after     { content: 'ELLUA'; }
+    .elluaDescFtr        { display: none; }
+    .box                 { width: 250px; left: 6%; }
+    #footer              { margin-top: 38%; }
+    #close               { margin: 8px 20px 0 0; }
+    #pId h4              { font-size: 12px; }
+    #ownpic img          { margin-left: 100%; }
+    .frame               { left: 5%; width: 77%; margin-top: 5%; }
+    #search { 
+        left: -5px;
+        margin-top: 0;
+        width: 27px;
+        height: 24px;
+    }
+    .inputSearch{
+        left: -8px;
+        margin-top: -3px;
+        padding: 3px 3px 3px 38px;
+    }
+    .panel-heading .row > h1 { font-size: 2.5em; }
+}
+@media screen and (min-width: 700px) and (max-width: 980px) {
+    .clr{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .elluaDesc span{ display: none; }
+    .elluaDesc:after{ content: 'ELLUA'; }
+    #ownpic{ margin-right: 23px !important; margin-left: 0px; }
+    #ownpic img{ width: 150px; height: 150px; }
+    #hdrOwn:nth-child(2n){ font-size: 12px;}
+    .frame { height: 20%; }
+    .carousel-caption p{ font-size: 11px; color: white; }
+}
+
+@media screen and (min-width: 981px) and (max-width: 1280px){
+    .clr{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .frame { height: 200px; }
+}
+
+@media screen and (min-width: 1281px){
+    .clr{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .frame { height: 250px; width: 40%}
+}
+

@@ -1,0 +1,45 @@
+@import 'common.css';
+@import 'dropdown.css';
+@import url(http://fonts.googleapis.com/css?family=Amarante);
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url(ProximaNova-Light.otf);
+}
+
+@font-face{
+    font-family: 'fontawesome';
+    src: url(font-awesome/fonts/FontAwesome.otf);
+    font-weight: bold;
+}
+
+@body-bg         :    #f5f0ec;
+@custom-font     :    'MyWebFont', 'Helvetica', sans-serif;
+@navbar-font     :    'Calibri','Arial', sans-serif;
+@color-gray      :    #666;
+@color-green     :    #3b7140;
+@bg-select       :    #6c9c76;
+
+html:extend(body){}
+
+body{
+    margin: 15px 0 0 0;
+    background: @body-bg;
+    display: block;
+	font-family: @custom-font;
+	font-weight: 400;
+	color: color-gray;
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+::-moz-selection{
+	background: @bg-select;
+	color: white;
+}
+
+::selection{
+	background: @bg-select;
+	color: white;
+}
